@@ -35,6 +35,9 @@ and related TCIA collections.
 
 ## 📁 Repository Structure
 
+## 📁 Repository Structure
+
+```
 TNBC-Histopathology-Dataset/
 ├── data/                  # Patient cohort CSV, metadata, imaging links
 ├── annotations/           # Tumor masks and patch-level labels
@@ -42,6 +45,7 @@ TNBC-Histopathology-Dataset/
 ├── notebooks/             # Exploratory analysis notebooks
 ├── docs/                  # Research proposal and methodology
 └── results/               # Summary statistics and outputs
+```
 
 ---
 
