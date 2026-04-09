@@ -35,8 +35,6 @@ and related TCIA collections.
 
 ## 📁 Repository Structure
 
-## 📁 Repository Structure
-
 ```
 TNBC-Histopathology-Dataset/
 ├── data/                  # Patient cohort CSV, metadata, imaging links
