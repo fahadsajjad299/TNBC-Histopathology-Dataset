@@ -45,48 +45,48 @@ No proprietary data is included.
 ---
 
 ## 📁 Repository Structure
-
+```
 TNBC-Histopathology-Dataset/
 │
 ├── data/
-│   ├── TNBC_Clinical_Data.csv      # Clinical metadata for 114 patients
-│   ├── patient_ids.csv             # Confirmed TNBC patient ID list
-│   └── imaging_links.csv           # IDC links to WSI and MRI per patient
+│   ├── TNBC_Clinical_Data.csv       # Clinical metadata for 114 patients
+│   ├── patient_ids.csv              # Confirmed TNBC patient ID list
+│   └── imaging_links.csv            # IDC links to WSI and MRI per patient
 │
 ├── annotations/
-│   ├── TCGA-XXXX/
-│   │   ├── heatmap_CLAM.png        # CLAM tumor heatmap
-│   │   ├── heatmap_UNI.png         # UNI tumor heatmap
-│   │   ├── patch_labels_CLAM.csv   # Patch-level tumor scores (CLAM)
-│   │   ├── patch_labels_UNI.csv    # Patch-level tumor scores (UNI)
-│   │   ├── tumor_mask_CLAM.npy     # Binary tumor mask (CLAM)
-│   │   ├── tumor_mask_UNI.npy      # Binary tumor mask (UNI)
-│   │   └── metadata.json           # Patient level metadata
-│   └── ... (114 patient folders)
+│   └── TCGA-XXXX/                   # One folder per patient (×114)
+│       ├── heatmap_CLAM.png         # CLAM tumor heatmap
+│       ├── heatmap_UNI.png          # UNI tumor heatmap
+│       ├── patch_labels_CLAM.csv    # Patch-level tumor scores (CLAM)
+│       ├── patch_labels_UNI.csv     # Patch-level tumor scores (UNI)
+│       ├── tumor_mask_CLAM.npy      # Binary tumor mask (CLAM)
+│       ├── tumor_mask_UNI.npy       # Binary tumor mask (UNI)
+│       └── metadata.json            # Patient-level metadata
 │
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb   # Clinical data analysis
-│   ├── 02_slide_access.ipynb       # Accessing IDC slides via Colab
-│   ├── 03_CLAM_annotation.ipynb    # CLAM model pipeline
-│   └── 04_UNI_annotation.ipynb     # UNI model pipeline
+│   ├── 01_data_exploration.ipynb    # Clinical data analysis
+│   ├── 02_slide_access.ipynb        # Accessing IDC slides via Colab
+│   ├── 03_CLAM_annotation.ipynb     # CLAM model pipeline
+│   └── 04_UNI_annotation.ipynb      # UNI model pipeline
 │
 ├── scripts/
-│   ├── filter_tnbc_patients.py     # Filter TNBC from TCGA-BRCA
-│   ├── extract_metadata.py         # Build metadata JSON per patient
-│   ├── run_clam.py                 # Run CLAM annotation pipeline
-│   └── run_uni.py                  # Run UNI annotation pipeline
+│   ├── filter_tnbc_patients.py      # Filter TNBC from TCGA-BRCA
+│   ├── extract_metadata.py          # Build metadata JSON per patient
+│   ├── run_clam.py                  # Run CLAM annotation pipeline
+│   └── run_uni.py                   # Run UNI annotation pipeline
 │
 ├── results/
-│   ├── tumor_summary.csv           # Per patient tumor statistics
-│   ├── model_comparison.csv        # CLAM vs UNI comparison table
-│   └── figures/                    # Summary plots and heatmap examples
+│   ├── tumor_summary.csv            # Per-patient tumor statistics
+│   ├── model_comparison.csv         # CLAM vs UNI comparison table
+│   └── figures/                     # Summary plots and heatmap examples
 │
 ├── docs/
-│   ├── methodology.md              # Detailed methodology
-│   └── data_dictionary.md          # Column descriptions for all CSVs
+│   ├── methodology.md               # Detailed methodology
+│   └── data_dictionary.md           # Column descriptions for all CSVs
 │
-├── LICENSE                         # CC BY 4.0
+├── LICENSE                          # CC BY 4.0
 └── README.md
+```
 
 
 ---
